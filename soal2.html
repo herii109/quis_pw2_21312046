@@ -29,16 +29,42 @@ halaman html. Tampilkan di id jawaban5
         */
 
         // tulis kode dibawah ini
+        
+
+    // Implementasi fungsi Welcome
+    function Welcome() {
+        return "Selamat datang di universitas teknokrat indonesia";
+    }
+
+    // Menampilkan hasil fungsi di halaman HTML
+    document.getElementById("jawaban5").innerHTML = Welcome();
+</script>
 
         
        
         // Soal No. 6 Fungsi Looping
-        /* 
-            Buatlah sebuah fungsi bernama lopping(), yang mengembalikan nilai hasil looping dari dua parameter yang dikirim.
-            contoh: looping(3, 7), maka akan tampil : 3,4,5,6,7
-        */
-
-        // tulis kode di sini 
+        <script>
+            // Soal No. 6 Fungsi Looping
+            /* 
+                Buatlah sebuah fungsi bernama looping(), yang mengembalikan nilai hasil looping dari dua parameter yang dikirim.
+                contoh: looping(3, 7), maka akan tampil : 3,4,5,6,7
+            */
+        
+            // Implementasi fungsi looping
+            function looping(start, end) {
+                let result = '';
+                for (let i = start; i <= end; i++) {
+                    result += i + ',';
+                }
+                // Menghapus koma terakhir
+                result = result.slice(0, -1);
+                return result;
+            }
+        
+            // Menampilkan hasil fungsi di halaman HTML
+            document.getElementById("jawaban6").innerHTML = looping(3, 7);
+        </script>
+         
 
     </script>
 </body>
